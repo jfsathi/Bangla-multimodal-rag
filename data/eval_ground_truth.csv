@@ -1,0 +1,29 @@
+﻿question_id,pdf_id,pdf_name,pdf_type,page_no,gold_chunk_id,modality,question_type,question_bn,gold_answer_bn,expected_keywords_bn,difficulty
+Q001,Science9,Science9.pdf,scanned,1,science9-p1-text-0001,text,count_list,খাদ্যের কাজ প্রধানত কয়টি?,তিনটি,তিনটি;খাদ্যের কাজ,easy
+Q002,Science9,Science9.pdf,scanned,1,science9-p1-text-0001,text,definition,পুষ্টির ইংরেজি শব্দ কী?,Nutrition,Nutrition;পুষ্টি,easy
+Q003,Science9,Science9.pdf,scanned,2,science9-p2-text-0002,text,short_fact,শর্করা প্রধানত কোন কোন উপাদান দিয়ে তৈরি হয়?,"কার্বন, হাইড্রোজেন এবং অক্সিজেন",কার্বন;হাইড্রোজেন;অক্সিজেন,medium
+Q004,Science9,Science9.pdf,scanned,2,science9-p2-text-0002,text,short_fact,গ্লুকোজকে আর কী নামে ডাকা হয়?,ফল শর্করা (Fruit Sugar),ফল শর্করা;Fruit Sugar,medium
+Q005,Science9,Science9.pdf,scanned,2,science9-p2-text-0002,text,short_fact,সুক্রোজের উৎস কী কী?,"আখের রস, চিনি, গুড়, মিছরি",আখের রস;চিনি;গুড়;মিছরি,medium
+Q006,Science9,Science9.pdf,scanned,3,science9-p3-text-0003,text,short_fact,শর্করা ও প্রোটিনের ক্যালরি মান প্রায় কত?,৪ kcal/g,৪ kcal/g;ক্যালরি,medium
+Q007,Science9,Science9.pdf,scanned,3,science9-p3-text-0003,text,short_fact,এক কিলোক্যালরি কত ক্যালরির সমান?,এক হাজার ক্যালরি,এক হাজার ক্যালরি;কিলোক্যালরি,medium
+Q008,Science9,Science9.pdf,scanned,4,science9-p4-text-0004,text,short_fact,প্রাণিজ স্নেহের উৎস কী কী?,"ঘি, পনির, মাংস, মাখন",ঘি;পনির;মাংস;মাখন,easy
+Q009,Science9,Science9.pdf,scanned,11,science9-p11-text-0011,text,short_fact,মানবদেহের বৃদ্ধি কত বছর পর্যন্ত ঘটে?,২০-২৪ বছর,২০-২৪ বছর,medium
+Q010,Science9,Science9.pdf,scanned,10,science9-p10-text-0010,text,short_fact,একজন প্রাপ্তবয়স্ক মানুষের দৈনিক কত লিটার পানি পান করা উচিত?,২-৩ লিটার,২-৩ লিটার;পানি,easy
+Q011,Science9,Science9.pdf,scanned,7,science9-p7-table-row-0002,table,table_lookup,রাইবোফ্ল্যাভিন (B2)-এর অভাবে কী হয়?,ঠোঁটের দুপাশে ফোটা/ক্ষত দেখা দেয়,ঠোঁটের দুপাশে;রাইবোফ্ল্যাভিন,hard
+Q012,Science9,Science9.pdf,scanned,7,science9-p7-table-row-0003,table,table_lookup,নিয়াসিনের অভাবে কোন রোগ হয়?,পেলেগ্রা রোগ,পেলেগ্রা,hard
+Q013,Science9,Science9.pdf,scanned,12,science9-p12-structure-0001,structure,process_step,"""দৈনিক খাবার কেমন হবে"" অংশের শেষ ধাপ কী বলা হয়েছে?",একজন পূর্ণবয়স্ক মানুষের দৈনিক সুষম খাদ্যের বিভাজন,পূর্ণবয়স্ক;সুষম খাদ্যের বিভাজন,hard
+Q014,Science9,Science9.pdf,scanned,12,science9-p12-image-0002,image,descriptive,পৃষ্ঠা ১২-এর চিত্রটি কী দেখাচ্ছে?,একজন পূর্ণবয়স্ক মানুষের দৈনিক সুষম খাদ্যের বিভাজন,সুষম খাদ্যের বিভাজন;পূর্ণবয়স্ক,hard
+Q015,Geography,Geography.pdf,native_text,1,geography-p1-text-0001,text,descriptive,ভূগোল মূলত কী নিয়ে আলোচনা করে?,"পৃথিবীর প্রকৃতি, সম্পদ, সমাজ ও মানুষের জীবনের পারস্পরিক সম্পর্ক",প্রকৃতি;সম্পদ;সমাজ;পারস্পরিক সম্পর্ক,medium
+Q016,Geography,Geography.pdf,native_text,1,geography-p1-text-0001,text,definition,পরিবেশ বলতে কী বোঝায়?,মানুষের চারপাশের সব জীব ও জড় উপাদান,চারপাশের;জীব ও জড় উপাদান,easy
+Q017,Geography,Geography.pdf,native_text,2,geography-p2-text-0002,text,short_fact,সূর্যের সবচেয়ে নিকটবর্তী গ্রহ কোনটি?,বুধ,বুধ,easy
+Q018,Geography,Geography.pdf,native_text,2,geography-p2-text-0002,text,short_fact,সূর্য থেকে সবচেয়ে দূরে অবস্থিত গ্রহ কোনটি?,নেপচুন,নেপচুন,easy
+Q019,Geography,Geography.pdf,native_text,2,geography-p2-image-0001,image,table_lookup,চিত্র অনুযায়ী বুধ গ্রহের সূর্য থেকে গড় দূরত্ব কত?,৫৮ কোটি কিলোমিটার,৫৮ কোটি;বুধ,hard
+Q020,Geography,Geography.pdf,native_text,2,geography-p2-image-0001,image,table_lookup,চিত্র অনুযায়ী পৃথিবীর সূর্য থেকে গড় দূরত্ব কত?,১৫ কোটি কিলোমিটার,১৫ কোটি;পৃথিবী,hard
+Q021,Geography,Geography.pdf,native_text,3,geography-p3-text-0003,text,count_list,ইতিহাসবিদরা অতীত সম্পর্কে জানতে কী ধরনের উপাদান ব্যবহার করেন?,"লিখিত দলিল, শিলালিপি, মুদ্রা, মৃৎপাত্র, স্থাপত্য, লোককথা, ভ্রমণবৃত্তান্ত ও প্রত্নস্থান",লিখিত দলিল;মুদ্রা;মৃৎপাত্র;প্রত্নস্থান,medium
+Q022,Geography,Geography.pdf,native_text,3,geography-p3-table-row-0004,table,table_lookup,প্রত্নতাত্ত্বিক উপাদানের উদাহরণ কী কী?,"মুদ্রা, মৃৎপাত্র, স্থাপত্য, অস্ত্র, অলংকার",মুদ্রা;মৃৎপাত্র;স্থাপত্য;অলংকার,medium
+Q023,Geography,Geography.pdf,native_text,1,geography-p1-table-row-0002,table,table_lookup,মানব ভূগোলে কী কী বিষয় আলোচিত হয়?,"জনসংখ্যা, বসতি, জীবিকা, পরিবহন, যোগাযোগ ও মানুষের অর্থনৈতিক কাজ",জনসংখ্যা;বসতি;জীবিকা;পরিবহন,medium
+Q024,Geography,Geography.pdf,native_text,4,geography-p4-text-0004,text,short_fact,মেসোপটেমীয় সভ্যতা কোন নদীর অববাহিকায় গড়ে উঠেছিল?,টাইগ্রিস ও ইউফ্রেটিস নদী,টাইগ্রিস;ইউফ্রেটিস,medium
+Q025,piechart,piechart.pdf,scanned,1,piechart-p1-image-0001,image,table_lookup,২০১৭-১৮ বাজেটে বৈদেশিক অনুদানের হার কত?,১.৮%,১.৮%;বৈদেশিক অনুদান,hard
+Q026,piechart,piechart.pdf,scanned,1,piechart-p1-image-0001,image,table_lookup,২০১৭-১৮ বাজেটে জাতীয় রাজস্ব বোর্ড নিয়ন্ত্রিত করের পরিমাণ কত টাকা?,"২,৪৮,১৯০ কোটি টাকা","২,৪৮,১৯০ কোটি টাকা",hard
+Q027,piechart,piechart.pdf,scanned,1,piechart-p1-image-0001,image,table_lookup,বাজেটে মূল্য সংযোজন করের হার কত?,৩৬.৮%,৩৬.৮%;মূল্য সংযোজন কর,hard
+Q028,piechart,piechart.pdf,scanned,2,piechart-p2-image-0002,image,table_lookup,বাজেটে জনপ্রশাসন খাতে ব্যয়ের হার কত?,১৩.৬%,১৩.৬%;জনপ্রশাসন,hard

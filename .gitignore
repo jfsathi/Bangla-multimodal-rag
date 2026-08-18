@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+workspace/
+*.npy
+*.log
+
+# University-provided template/sample and the thesis proposal are kept local,
+# not published to the public repo (see chat: scope = code + thesis, no proposal).
+DUET_Thesis_Template/
+SAMPLE THESIS REPORT DUET.pdf
+proposal.pdf

@@ -1,0 +1,62 @@
+[
+  {
+    "embedding_model": "BAAI/bge-m3",
+    "mode": "direct",
+    "n": 24,
+    "hit_at_1": 0.7917,
+    "hit_at_3": 0.9583,
+    "hit_at_5": 0.9583,
+    "mrr": 0.875,
+    "mean_retrieval_latency_ms": 1819.4017
+  },
+  {
+    "embedding_model": "BAAI/bge-m3",
+    "mode": "translated",
+    "n": 24,
+    "hit_at_1": 0.7083,
+    "hit_at_3": 0.9167,
+    "hit_at_5": 0.9583,
+    "mrr": 0.8139,
+    "mean_retrieval_latency_ms": 367.0088
+  },
+  {
+    "embedding_model": "intfloat/multilingual-e5-base",
+    "mode": "direct",
+    "n": 28,
+    "hit_at_1": 0.7857,
+    "hit_at_3": 0.9643,
+    "hit_at_5": 0.9643,
+    "mrr": 0.8631,
+    "mean_retrieval_latency_ms": 662.0279
+  },
+  {
+    "embedding_model": "intfloat/multilingual-e5-base",
+    "mode": "translated",
+    "n": 28,
+    "hit_at_1": 0.7143,
+    "hit_at_3": 0.9643,
+    "hit_at_5": 0.9643,
+    "mrr": 0.8274,
+    "mean_retrieval_latency_ms": 311.8686
+  },
+  {
+    "embedding_model": "nomic-embed-text-v2-moe:latest",
+    "mode": "direct",
+    "n": 28,
+    "hit_at_1": 0.6071,
+    "hit_at_3": 0.9286,
+    "hit_at_5": 0.9286,
+    "mrr": 0.744,
+    "mean_retrieval_latency_ms": 4489.3268
+  },
+  {
+    "embedding_model": "nomic-embed-text-v2-moe:latest",
+    "mode": "translated",
+    "n": 28,
+    "hit_at_1": 0.5714,
+    "hit_at_3": 0.9643,
+    "hit_at_5": 0.9643,
+    "mrr": 0.756,
+    "mean_retrieval_latency_ms": 5283.6329
+  }
+]

@@ -1,0 +1,14 @@
+streamlit>=1.35
+numpy>=1.26
+pandas>=2.2
+pillow>=10.0
+requests>=2.31
+PyYAML>=6.0
+tabulate>=0.9
+PyMuPDF>=1.24
+docling>=2.0
+transformers>=4.44
+sentence-transformers>=3.0
+accelerate>=0.33
+easyocr>=1.7
+pytesseract>=0.3
