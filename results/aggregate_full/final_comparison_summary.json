@@ -1,0 +1,39 @@
+{
+  "generators_compared": [
+    "qwen2.5:3b-instruct",
+    "llama3-chatqa:latest",
+    "mistral:7b-instruct-q4_K_M"
+  ],
+  "fixed_config": {
+    "embedding_model": "BAAI/bge-m3",
+    "modes": [
+      "direct",
+      "translated"
+    ]
+  },
+  "mean_generation_latency_ms": {
+    "qwen3b": {
+      "direct": 5575.9,
+      "translated": 5635.4
+    },
+    "chatqa": {
+      "direct": 16652.5,
+      "translated": 13950.1
+    },
+    "mistral": {
+      "direct": 32301.5,
+      "translated": 29548.4
+    }
+  },
+  "significance_files": [
+    "results\\aggregate_full\\significance_bge-m3_direct_vs_translated.json",
+    "results\\aggregate_full\\significance_caption_ablation.json",
+    "results\\aggregate_full\\significance_chatqa_vs_mistral_direct.json",
+    "results\\aggregate_full\\significance_chatqa_vs_mistral_translated.json",
+    "results\\aggregate_full\\significance_minilm_vs_bgem3_direct.json",
+    "results\\aggregate_full\\significance_qwen3b_vs_chatqa_direct.json",
+    "results\\aggregate_full\\significance_qwen3b_vs_chatqa_translated.json",
+    "results\\aggregate_full\\significance_qwen3b_vs_mistral_direct.json",
+    "results\\aggregate_full\\significance_qwen3b_vs_mistral_translated.json"
+  ]
+}

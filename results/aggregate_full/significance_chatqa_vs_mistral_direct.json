@@ -1,0 +1,82 @@
+{
+  "label_a": "llama3-chatqa_direct",
+  "label_b": "mistral7b_direct",
+  "n_paired": 150,
+  "metrics": {
+    "exact_match": {
+      "n": 150,
+      "mean_a": 0.08,
+      "mean_b": 0.0,
+      "mean_diff_b_minus_a": -0.08,
+      "bootstrap_95ci": [
+        -0.12,
+        -0.04
+      ],
+      "n_b_better": 0,
+      "n_a_better": 12,
+      "n_tied": 138,
+      "sign_test_p_value": 0.000488,
+      "significant_at_0.05": true
+    },
+    "token_f1": {
+      "n": 150,
+      "mean_a": 0.2228,
+      "mean_b": 0.0458,
+      "mean_diff_b_minus_a": -0.177,
+      "bootstrap_95ci": [
+        -0.2267,
+        -0.1279
+      ],
+      "n_b_better": 17,
+      "n_a_better": 64,
+      "n_tied": 69,
+      "sign_test_p_value": 0.0,
+      "significant_at_0.05": true
+    },
+    "rouge_l": {
+      "n": 150,
+      "mean_a": 0.2191,
+      "mean_b": 0.0417,
+      "mean_diff_b_minus_a": -0.1774,
+      "bootstrap_95ci": [
+        -0.2258,
+        -0.1295
+      ],
+      "n_b_better": 14,
+      "n_a_better": 67,
+      "n_tied": 69,
+      "sign_test_p_value": 0.0,
+      "significant_at_0.05": true
+    },
+    "keyword_recall": {
+      "n": 150,
+      "mean_a": 0.291,
+      "mean_b": 0.1626,
+      "mean_diff_b_minus_a": -0.1284,
+      "bootstrap_95ci": [
+        -0.1873,
+        -0.0711
+      ],
+      "n_b_better": 11,
+      "n_a_better": 37,
+      "n_tied": 102,
+      "sign_test_p_value": 0.000222,
+      "significant_at_0.05": true
+    },
+    "semantic_similarity": {
+      "n": 150,
+      "mean_a": 0.5887,
+      "mean_b": 0.4088,
+      "mean_diff_b_minus_a": -0.1799,
+      "bootstrap_95ci": [
+        -0.2139,
+        -0.1458
+      ],
+      "n_b_better": 28,
+      "n_a_better": 116,
+      "n_tied": 6,
+      "sign_test_p_value": 0.0,
+      "significant_at_0.05": true
+    }
+  }
+}
