@@ -5,7 +5,7 @@ from dataclasses import replace
 from pathlib import Path
 from typing import Iterable
 
-from .captioner import BlipCaptioner
+from .captioner import BlipCaptioner, OllamaVisionCaptioner
 from .config import ProjectConfig, load_project_config, save_project_config
 from .docling_extractor import DoclingExtractor
 from .embeddings import SentenceTransformerEmbedder
@@ -41,7 +41,7 @@ class BanglaMultimodalRAGPipeline:
         self._embedder_cache: dict[str, SentenceTransformerEmbedder] = {}
         self._vector_store_cache: dict[str, SimpleVectorStore] = {}
         self._translator_cache: dict[str, NllbTranslator] = {}
-        self._captioner_cache: dict[str, BlipCaptioner] = {}
+        self._captioner_cache: dict[str, BlipCaptioner | OllamaVisionCaptioner] = {}
         self._image_ocr_cache: ImageOcrReader | None = None
 
     def _get_image_ocr_reader(self) -> ImageOcrReader:
@@ -108,8 +108,17 @@ class BanglaMultimodalRAGPipeline:
             )
         return self._translator_cache[key]
 
-    def _get_captioner(self, config: ProjectConfig) -> BlipCaptioner:
-        key = f"{config.caption_model}|{config.caption_device}"
+    def _get_captioner(self, config: ProjectConfig) -> BlipCaptioner | OllamaVisionCaptioner:
+        backend = getattr(config, "caption_backend", "ollama_vision")
+        if backend == "ollama_vision":
+            key = f"ollama_vision|{config.vision_model}|{config.ollama_base_url}"
+            if key not in self._captioner_cache:
+                self._captioner_cache[key] = OllamaVisionCaptioner(
+                    model_name=config.vision_model,
+                    base_url=config.ollama_base_url,
+                )
+            return self._captioner_cache[key]
+        key = f"blip|{config.caption_model}|{config.caption_device}"
         if key not in self._captioner_cache:
             self._captioner_cache[key] = BlipCaptioner(
                 model_name=config.caption_model,

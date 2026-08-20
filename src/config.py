@@ -38,7 +38,13 @@ class ProjectConfig:
     text_chunk_overlap: int = 250
     generate_page_images: bool = False
     generate_picture_images: bool = True
-    enable_picture_description: bool = False
+    # "ollama_vision" reads/describes the picture with a local multimodal Ollama
+    # model (see vision_model). It reads Bangla/English text, chart axes, and
+    # table structure inside images, so it generalizes across arbitrary PDFs far
+    # better than the small English-only BLIP model. Use "blip" only as an
+    # offline fallback when no Ollama vision model is installed.
+    caption_backend: str = "ollama_vision"
+    enable_picture_description: bool = True
     enable_image_ocr: bool = True
     vision_model: str = "llava:latest"
     answer_language: str = "bn"

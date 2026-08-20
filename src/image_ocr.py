@@ -35,10 +35,19 @@ _DISTANCE_RE = re.compile(
 class ImageOcrReader:
     """Bangla/English OCR for chart, diagram, and figure images."""
 
-    def __init__(self, languages: tuple[str, ...] = ("bn", "en"), gpu: bool = False):
+    def __init__(self, languages: tuple[str, ...] = ("bn", "en"), gpu: bool | str = "auto"):
         self.languages = languages
         self.gpu = gpu
         self._reader = None
+
+    def _resolve_gpu(self) -> bool:
+        if isinstance(self.gpu, bool):
+            return self.gpu
+        try:
+            import torch
+            return bool(torch.cuda.is_available())
+        except Exception:
+            return False
 
     def _ensure_loaded(self) -> None:
         if self._reader is not None:
@@ -47,7 +56,7 @@ class ImageOcrReader:
             import easyocr
         except Exception as exc:  # pragma: no cover
             raise RuntimeError("easyocr is required for image OCR.") from exc
-        self._reader = easyocr.Reader(list(self.languages), gpu=self.gpu, verbose=False)
+        self._reader = easyocr.Reader(list(self.languages), gpu=self._resolve_gpu(), verbose=False)
 
     def read_lines(self, image_path: str | Path) -> list[str]:
         path = Path(image_path)

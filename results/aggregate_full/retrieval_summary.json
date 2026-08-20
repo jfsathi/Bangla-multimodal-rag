@@ -1,0 +1,102 @@
+[
+  {
+    "embedding_model": "BAAI/bge-m3",
+    "mode": "direct",
+    "n": 150,
+    "hit_at_1": 0.48,
+    "hit_at_3": 0.68,
+    "hit_at_5": 0.7667,
+    "mrr": 0.5896,
+    "mean_retrieval_latency_ms": 1150.4409
+  },
+  {
+    "embedding_model": "BAAI/bge-m3",
+    "mode": "translated",
+    "n": 150,
+    "hit_at_1": 0.42,
+    "hit_at_3": 0.66,
+    "hit_at_5": 0.7667,
+    "mrr": 0.5518,
+    "mean_retrieval_latency_ms": 280.5907
+  },
+  {
+    "embedding_model": "intfloat/multilingual-e5-base",
+    "mode": "direct",
+    "n": 150,
+    "hit_at_1": 0.4733,
+    "hit_at_3": 0.6667,
+    "hit_at_5": 0.74,
+    "mrr": 0.5797,
+    "mean_retrieval_latency_ms": 230.2761
+  },
+  {
+    "embedding_model": "intfloat/multilingual-e5-base",
+    "mode": "translated",
+    "n": 150,
+    "hit_at_1": 0.3533,
+    "hit_at_3": 0.58,
+    "hit_at_5": 0.6467,
+    "mrr": 0.472,
+    "mean_retrieval_latency_ms": 243.5294
+  },
+  {
+    "embedding_model": "nomic-embed-text-v2-moe:latest",
+    "mode": "direct",
+    "n": 150,
+    "hit_at_1": 0.3533,
+    "hit_at_3": 0.62,
+    "hit_at_5": 0.68,
+    "mrr": 0.487,
+    "mean_retrieval_latency_ms": 2440.0742
+  },
+  {
+    "embedding_model": "nomic-embed-text-v2-moe:latest",
+    "mode": "translated",
+    "n": 150,
+    "hit_at_1": 0.3067,
+    "hit_at_3": 0.5267,
+    "hit_at_5": 0.6533,
+    "mrr": 0.4327,
+    "mean_retrieval_latency_ms": 3748.7699
+  },
+  {
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "mode": "direct",
+    "n": 150,
+    "hit_at_1": 0.1067,
+    "hit_at_3": 0.1867,
+    "hit_at_5": 0.36,
+    "mrr": 0.181,
+    "mean_retrieval_latency_ms": 146.0483
+  },
+  {
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "mode": "translated",
+    "n": 150,
+    "hit_at_1": 0.2933,
+    "hit_at_3": 0.5067,
+    "hit_at_5": 0.6,
+    "mrr": 0.4064,
+    "mean_retrieval_latency_ms": 221.9971
+  },
+  {
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "mode": "direct",
+    "n": 150,
+    "hit_at_1": 0.14,
+    "hit_at_3": 0.3733,
+    "hit_at_5": 0.48,
+    "mrr": 0.2631,
+    "mean_retrieval_latency_ms": 184.1628
+  },
+  {
+    "embedding_model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "mode": "translated",
+    "n": 150,
+    "hit_at_1": 0.2533,
+    "hit_at_3": 0.4667,
+    "hit_at_5": 0.5533,
+    "mrr": 0.3633,
+    "mean_retrieval_latency_ms": 250.7351
+  }
+]

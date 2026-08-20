@@ -183,7 +183,18 @@ def main() -> None:
         ocr_engine = st.selectbox("Selected OCR engine", ["easyocr", "tesseract", "rapidocr", "none"], index=0)
         min_quality = st.slider("Bangla extraction quality threshold", 0.10, 0.90, 0.55, 0.05)
         image_scale = st.slider("Docling image scale", 1.0, 4.0, 3.0, 0.5)
-        enable_image_caption = st.checkbox("Generate image captions for image chunks", value=False)
+        enable_image_caption = st.checkbox("Generate image captions for image chunks (recommended)", value=True)
+        caption_backend = st.selectbox(
+            "Image caption backend",
+            ["ollama_vision", "blip"],
+            index=0,
+            help=(
+                "ollama_vision: uses a local Ollama vision model (e.g. llava) to read and describe "
+                "charts/diagrams/tables/photos in Bangla - works for any PDF. "
+                "blip: offline English-only fallback, weaker for Bangla charts."
+            ),
+        )
+        vision_model = st.text_input("Ollama vision model (for ollama_vision backend)", value="llava:latest")
         enable_image_ocr = st.checkbox("OCR on chart/image chunks (recommended)", value=True)
 
         # Keep only top_k here (used during build). Move LLM & answer settings to main UI after build.
@@ -213,6 +224,8 @@ def main() -> None:
                 min_bangla_quality=min_quality,
                 images_scale=image_scale,
                 enable_picture_description=enable_image_caption,
+                caption_backend=caption_backend,
+                vision_model=vision_model,
                 enable_image_ocr=enable_image_ocr,
                 query_top_k=top_k,
                 answer_language=answer_language,
