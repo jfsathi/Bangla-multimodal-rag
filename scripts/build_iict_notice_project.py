@@ -34,7 +34,13 @@ def main() -> None:
     t0 = time.time()
     config = ProjectConfig(
         project_name=PROJECT_NAME,
-        embedding_models=["BAAI/bge-m3"],
+        embedding_models=[
+            "nomic-embed-text-v2-moe:latest",
+            "BAAI/bge-m3",
+            "intfloat/multilingual-e5-base",
+            "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+            "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        ],
         ocr_strategy="auto_best",
         ocr_engine="easyocr",
         auto_ocr_on_bad_bangla=True,

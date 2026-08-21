@@ -1,0 +1,179 @@
+{
+  "note": "Sensitivity analysis with DUETBooklet excluded and IICTNotice (1-page supplementary English doc) included instead. Reported alongside, not in place of, the canonical ten-document results.",
+  "retrieval_summary_by_model_mode": {
+    "nomic-embed-text-v2-moe:latest|direct": {
+      "n": 136,
+      "hit_at_1": 0.3382,
+      "hit_at_3": 0.6471,
+      "hit_at_5": 0.7426,
+      "mrr": 0.4967
+    },
+    "nomic-embed-text-v2-moe:latest|translated": {
+      "n": 136,
+      "hit_at_1": 0.2868,
+      "hit_at_3": 0.5588,
+      "hit_at_5": 0.6912,
+      "mrr": 0.4369
+    },
+    "BAAI/bge-m3|direct": {
+      "n": 136,
+      "hit_at_1": 0.5,
+      "hit_at_3": 0.7426,
+      "hit_at_5": 0.8382,
+      "mrr": 0.6355
+    },
+    "BAAI/bge-m3|translated": {
+      "n": 136,
+      "hit_at_1": 0.4412,
+      "hit_at_3": 0.7132,
+      "hit_at_5": 0.8015,
+      "mrr": 0.5828
+    },
+    "intfloat/multilingual-e5-base|direct": {
+      "n": 136,
+      "hit_at_1": 0.5,
+      "hit_at_3": 0.6985,
+      "hit_at_5": 0.7721,
+      "mrr": 0.6072
+    },
+    "intfloat/multilingual-e5-base|translated": {
+      "n": 136,
+      "hit_at_1": 0.3456,
+      "hit_at_3": 0.6176,
+      "hit_at_5": 0.6912,
+      "mrr": 0.4879
+    },
+    "sentence-transformers/paraphrase-multilingual-mpnet-base-v2|direct": {
+      "n": 136,
+      "hit_at_1": 0.1397,
+      "hit_at_3": 0.4044,
+      "hit_at_5": 0.5441,
+      "mrr": 0.2822
+    },
+    "sentence-transformers/paraphrase-multilingual-mpnet-base-v2|translated": {
+      "n": 136,
+      "hit_at_1": 0.2721,
+      "hit_at_3": 0.5147,
+      "hit_at_5": 0.6029,
+      "mrr": 0.3968
+    },
+    "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2|direct": {
+      "n": 136,
+      "hit_at_1": 0.1103,
+      "hit_at_3": 0.1985,
+      "hit_at_5": 0.4118,
+      "mrr": 0.1987
+    },
+    "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2|translated": {
+      "n": 136,
+      "hit_at_1": 0.3235,
+      "hit_at_3": 0.5662,
+      "hit_at_5": 0.6765,
+      "mrr": 0.4538
+    }
+  },
+  "generation_summary_primary_qwen25_3b": {
+    "overall": {
+      "n": 1360,
+      "exact_match": 0.0154,
+      "token_f1": 0.1501,
+      "rouge_l": 0.1491,
+      "keyword_recall": 0.3211,
+      "semantic_similarity": 0.5646,
+      "abstention_rate": 0.0066,
+      "retrieval_hit_at_5": 0.6772
+    },
+    "by_mode": {
+      "direct": {
+        "n": 680,
+        "exact_match": 0.0147,
+        "token_f1": 0.1424,
+        "rouge_l": 0.1415,
+        "keyword_recall": 0.3063,
+        "semantic_similarity": 0.5572,
+        "abstention_rate": 0.0088,
+        "retrieval_hit_at_5": 0.6618
+      },
+      "translated": {
+        "n": 680,
+        "exact_match": 0.0162,
+        "token_f1": 0.1579,
+        "rouge_l": 0.1566,
+        "keyword_recall": 0.3358,
+        "semantic_similarity": 0.572,
+        "abstention_rate": 0.0044,
+        "retrieval_hit_at_5": 0.6926
+      }
+    }
+  },
+  "confusion_matrix_primary_qwen25_3b": {
+    "exact_match": {
+      "n": 1360,
+      "hit_and_correct": 20,
+      "hit_and_wrong": 901,
+      "miss_and_correct": 1,
+      "miss_and_wrong": 438,
+      "retrieval_hit_rate": 0.6772,
+      "answer_correct_rate": 0.0154,
+      "wrong_due_to_retrieval_miss_pct": 32.71,
+      "wrong_due_to_generation_pct": 67.29
+    },
+    "f1_threshold": {
+      "n": 1360,
+      "hit_and_correct": 69,
+      "hit_and_wrong": 852,
+      "miss_and_correct": 8,
+      "miss_and_wrong": 431,
+      "retrieval_hit_rate": 0.6772,
+      "answer_correct_rate": 0.0566,
+      "wrong_due_to_retrieval_miss_pct": 33.59,
+      "wrong_due_to_generation_pct": 66.41
+    }
+  },
+  "generation_summary_recommended_bgem3_chatqa": {
+    "direct": {
+      "n": 136,
+      "exact_match": 0.1324,
+      "token_f1": 0.2854,
+      "rouge_l": 0.2804,
+      "keyword_recall": 0.2842,
+      "semantic_similarity": 0.6209,
+      "abstention_rate": 0.0147,
+      "retrieval_hit_at_5": 0.8382
+    },
+    "translated": {
+      "n": 136,
+      "exact_match": 0.125,
+      "token_f1": 0.2805,
+      "rouge_l": 0.2752,
+      "keyword_recall": 0.3112,
+      "semantic_similarity": 0.635,
+      "abstention_rate": 0.0147,
+      "retrieval_hit_at_5": 0.8015
+    }
+  },
+  "confusion_matrix_recommended_bgem3_chatqa": {
+    "exact_match": {
+      "n": 272,
+      "hit_and_correct": 32,
+      "hit_and_wrong": 191,
+      "miss_and_correct": 3,
+      "miss_and_wrong": 46,
+      "retrieval_hit_rate": 0.8199,
+      "answer_correct_rate": 0.1287,
+      "wrong_due_to_retrieval_miss_pct": 19.41,
+      "wrong_due_to_generation_pct": 80.59
+    },
+    "f1_threshold": {
+      "n": 272,
+      "hit_and_correct": 53,
+      "hit_and_wrong": 170,
+      "miss_and_correct": 3,
+      "miss_and_wrong": 46,
+      "retrieval_hit_rate": 0.8199,
+      "answer_correct_rate": 0.2059,
+      "wrong_due_to_retrieval_miss_pct": 21.3,
+      "wrong_due_to_generation_pct": 78.7
+    }
+  }
+}
