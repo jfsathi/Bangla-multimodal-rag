@@ -1,0 +1,585 @@
+{
+  "f1_threshold_used": 0.6,
+  "overall": {
+    "exact_match": {
+      "n": 300,
+      "hit_and_correct": 6,
+      "hit_and_wrong": 224,
+      "miss_and_correct": 0,
+      "miss_and_wrong": 70,
+      "retrieval_hit_rate": 0.7667,
+      "answer_correct_rate": 0.02,
+      "wrong_due_to_retrieval_miss_pct": 23.81,
+      "wrong_due_to_generation_pct": 76.19
+    },
+    "f1_threshold": {
+      "n": 300,
+      "hit_and_correct": 16,
+      "hit_and_wrong": 214,
+      "miss_and_correct": 0,
+      "miss_and_wrong": 70,
+      "retrieval_hit_rate": 0.7667,
+      "answer_correct_rate": 0.0533,
+      "wrong_due_to_retrieval_miss_pct": 24.65,
+      "wrong_due_to_generation_pct": 75.35
+    }
+  },
+  "by_embedding_model": {
+    "BAAI/bge-m3": {
+      "exact_match": {
+        "n": 300,
+        "hit_and_correct": 6,
+        "hit_and_wrong": 224,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 70,
+        "retrieval_hit_rate": 0.7667,
+        "answer_correct_rate": 0.02,
+        "wrong_due_to_retrieval_miss_pct": 23.81,
+        "wrong_due_to_generation_pct": 76.19
+      },
+      "f1_threshold": {
+        "n": 300,
+        "hit_and_correct": 16,
+        "hit_and_wrong": 214,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 70,
+        "retrieval_hit_rate": 0.7667,
+        "answer_correct_rate": 0.0533,
+        "wrong_due_to_retrieval_miss_pct": 24.65,
+        "wrong_due_to_generation_pct": 75.35
+      }
+    }
+  },
+  "by_mode": {
+    "direct": {
+      "exact_match": {
+        "n": 150,
+        "hit_and_correct": 3,
+        "hit_and_wrong": 112,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 35,
+        "retrieval_hit_rate": 0.7667,
+        "answer_correct_rate": 0.02,
+        "wrong_due_to_retrieval_miss_pct": 23.81,
+        "wrong_due_to_generation_pct": 76.19
+      },
+      "f1_threshold": {
+        "n": 150,
+        "hit_and_correct": 8,
+        "hit_and_wrong": 107,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 35,
+        "retrieval_hit_rate": 0.7667,
+        "answer_correct_rate": 0.0533,
+        "wrong_due_to_retrieval_miss_pct": 24.65,
+        "wrong_due_to_generation_pct": 75.35
+      }
+    },
+    "translated": {
+      "exact_match": {
+        "n": 150,
+        "hit_and_correct": 3,
+        "hit_and_wrong": 112,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 35,
+        "retrieval_hit_rate": 0.7667,
+        "answer_correct_rate": 0.02,
+        "wrong_due_to_retrieval_miss_pct": 23.81,
+        "wrong_due_to_generation_pct": 76.19
+      },
+      "f1_threshold": {
+        "n": 150,
+        "hit_and_correct": 8,
+        "hit_and_wrong": 107,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 35,
+        "retrieval_hit_rate": 0.7667,
+        "answer_correct_rate": 0.0533,
+        "wrong_due_to_retrieval_miss_pct": 24.65,
+        "wrong_due_to_generation_pct": 75.35
+      }
+    }
+  },
+  "by_pdf": {
+    "Agriculture": {
+      "exact_match": {
+        "n": 40,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 21,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 19,
+        "retrieval_hit_rate": 0.525,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 47.5,
+        "wrong_due_to_generation_pct": 52.5
+      },
+      "f1_threshold": {
+        "n": 40,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 21,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 19,
+        "retrieval_hit_rate": 0.525,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 47.5,
+        "wrong_due_to_generation_pct": 52.5
+      }
+    },
+    "BDHistory": {
+      "exact_match": {
+        "n": 36,
+        "hit_and_correct": 2,
+        "hit_and_wrong": 26,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 8,
+        "retrieval_hit_rate": 0.7778,
+        "answer_correct_rate": 0.0556,
+        "wrong_due_to_retrieval_miss_pct": 23.53,
+        "wrong_due_to_generation_pct": 76.47
+      },
+      "f1_threshold": {
+        "n": 36,
+        "hit_and_correct": 5,
+        "hit_and_wrong": 23,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 8,
+        "retrieval_hit_rate": 0.7778,
+        "answer_correct_rate": 0.1389,
+        "wrong_due_to_retrieval_miss_pct": 25.81,
+        "wrong_due_to_generation_pct": 74.19
+      }
+    },
+    "DUETBooklet": {
+      "exact_match": {
+        "n": 48,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 27,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 21,
+        "retrieval_hit_rate": 0.5625,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 43.75,
+        "wrong_due_to_generation_pct": 56.25
+      },
+      "f1_threshold": {
+        "n": 48,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 27,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 21,
+        "retrieval_hit_rate": 0.5625,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 43.75,
+        "wrong_due_to_generation_pct": 56.25
+      }
+    },
+    "Geography": {
+      "exact_match": {
+        "n": 20,
+        "hit_and_correct": 1,
+        "hit_and_wrong": 19,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 0,
+        "retrieval_hit_rate": 1,
+        "answer_correct_rate": 0.05,
+        "wrong_due_to_retrieval_miss_pct": 0.0,
+        "wrong_due_to_generation_pct": 100.0
+      },
+      "f1_threshold": {
+        "n": 20,
+        "hit_and_correct": 2,
+        "hit_and_wrong": 18,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 0,
+        "retrieval_hit_rate": 1,
+        "answer_correct_rate": 0.1,
+        "wrong_due_to_retrieval_miss_pct": 0.0,
+        "wrong_due_to_generation_pct": 100.0
+      }
+    },
+    "PolashirJuddho": {
+      "exact_match": {
+        "n": 36,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 30,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 6,
+        "retrieval_hit_rate": 0.8333,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 16.67,
+        "wrong_due_to_generation_pct": 83.33
+      },
+      "f1_threshold": {
+        "n": 36,
+        "hit_and_correct": 3,
+        "hit_and_wrong": 27,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 6,
+        "retrieval_hit_rate": 0.8333,
+        "answer_correct_rate": 0.0833,
+        "wrong_due_to_retrieval_miss_pct": 18.18,
+        "wrong_due_to_generation_pct": 81.82
+      }
+    },
+    "Science9": {
+      "exact_match": {
+        "n": 28,
+        "hit_and_correct": 1,
+        "hit_and_wrong": 25,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 2,
+        "retrieval_hit_rate": 0.9286,
+        "answer_correct_rate": 0.0357,
+        "wrong_due_to_retrieval_miss_pct": 7.41,
+        "wrong_due_to_generation_pct": 92.59
+      },
+      "f1_threshold": {
+        "n": 28,
+        "hit_and_correct": 2,
+        "hit_and_wrong": 24,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 2,
+        "retrieval_hit_rate": 0.9286,
+        "answer_correct_rate": 0.0714,
+        "wrong_due_to_retrieval_miss_pct": 7.69,
+        "wrong_due_to_generation_pct": 92.31
+      }
+    },
+    "UGC1": {
+      "exact_match": {
+        "n": 36,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 22,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 14,
+        "retrieval_hit_rate": 0.6111,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 38.89,
+        "wrong_due_to_generation_pct": 61.11
+      },
+      "f1_threshold": {
+        "n": 36,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 22,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 14,
+        "retrieval_hit_rate": 0.6111,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 38.89,
+        "wrong_due_to_generation_pct": 61.11
+      }
+    },
+    "UGC2": {
+      "exact_match": {
+        "n": 16,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 16,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 0,
+        "retrieval_hit_rate": 1,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 0.0,
+        "wrong_due_to_generation_pct": 100.0
+      },
+      "f1_threshold": {
+        "n": 16,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 16,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 0,
+        "retrieval_hit_rate": 1,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 0.0,
+        "wrong_due_to_generation_pct": 100.0
+      }
+    },
+    "UGC3": {
+      "exact_match": {
+        "n": 32,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 32,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 0,
+        "retrieval_hit_rate": 1,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 0.0,
+        "wrong_due_to_generation_pct": 100.0
+      },
+      "f1_threshold": {
+        "n": 32,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 32,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 0,
+        "retrieval_hit_rate": 1,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 0.0,
+        "wrong_due_to_generation_pct": 100.0
+      }
+    },
+    "piechart": {
+      "exact_match": {
+        "n": 8,
+        "hit_and_correct": 2,
+        "hit_and_wrong": 6,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 0,
+        "retrieval_hit_rate": 1,
+        "answer_correct_rate": 0.25,
+        "wrong_due_to_retrieval_miss_pct": 0.0,
+        "wrong_due_to_generation_pct": 100.0
+      },
+      "f1_threshold": {
+        "n": 8,
+        "hit_and_correct": 4,
+        "hit_and_wrong": 4,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 0,
+        "retrieval_hit_rate": 1,
+        "answer_correct_rate": 0.5,
+        "wrong_due_to_retrieval_miss_pct": 0.0,
+        "wrong_due_to_generation_pct": 100.0
+      }
+    }
+  },
+  "by_language": {
+    "bn": {
+      "exact_match": {
+        "n": 252,
+        "hit_and_correct": 6,
+        "hit_and_wrong": 197,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 49,
+        "retrieval_hit_rate": 0.8056,
+        "answer_correct_rate": 0.0238,
+        "wrong_due_to_retrieval_miss_pct": 19.92,
+        "wrong_due_to_generation_pct": 80.08
+      },
+      "f1_threshold": {
+        "n": 252,
+        "hit_and_correct": 16,
+        "hit_and_wrong": 187,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 49,
+        "retrieval_hit_rate": 0.8056,
+        "answer_correct_rate": 0.0635,
+        "wrong_due_to_retrieval_miss_pct": 20.76,
+        "wrong_due_to_generation_pct": 79.24
+      }
+    },
+    "en": {
+      "exact_match": {
+        "n": 48,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 27,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 21,
+        "retrieval_hit_rate": 0.5625,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 43.75,
+        "wrong_due_to_generation_pct": 56.25
+      },
+      "f1_threshold": {
+        "n": 48,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 27,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 21,
+        "retrieval_hit_rate": 0.5625,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 43.75,
+        "wrong_due_to_generation_pct": 56.25
+      }
+    }
+  },
+  "by_modality": {
+    "image": {
+      "exact_match": {
+        "n": 32,
+        "hit_and_correct": 2,
+        "hit_and_wrong": 27,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 3,
+        "retrieval_hit_rate": 0.9062,
+        "answer_correct_rate": 0.0625,
+        "wrong_due_to_retrieval_miss_pct": 10.0,
+        "wrong_due_to_generation_pct": 90.0
+      },
+      "f1_threshold": {
+        "n": 32,
+        "hit_and_correct": 5,
+        "hit_and_wrong": 24,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 3,
+        "retrieval_hit_rate": 0.9062,
+        "answer_correct_rate": 0.1562,
+        "wrong_due_to_retrieval_miss_pct": 11.11,
+        "wrong_due_to_generation_pct": 88.89
+      }
+    },
+    "structure": {
+      "exact_match": {
+        "n": 16,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 14,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 2,
+        "retrieval_hit_rate": 0.875,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 12.5,
+        "wrong_due_to_generation_pct": 87.5
+      },
+      "f1_threshold": {
+        "n": 16,
+        "hit_and_correct": 1,
+        "hit_and_wrong": 13,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 2,
+        "retrieval_hit_rate": 0.875,
+        "answer_correct_rate": 0.0625,
+        "wrong_due_to_retrieval_miss_pct": 13.33,
+        "wrong_due_to_generation_pct": 86.67
+      }
+    },
+    "table": {
+      "exact_match": {
+        "n": 128,
+        "hit_and_correct": 0,
+        "hit_and_wrong": 74,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 54,
+        "retrieval_hit_rate": 0.5781,
+        "answer_correct_rate": 0,
+        "wrong_due_to_retrieval_miss_pct": 42.19,
+        "wrong_due_to_generation_pct": 57.81
+      },
+      "f1_threshold": {
+        "n": 128,
+        "hit_and_correct": 4,
+        "hit_and_wrong": 70,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 54,
+        "retrieval_hit_rate": 0.5781,
+        "answer_correct_rate": 0.0312,
+        "wrong_due_to_retrieval_miss_pct": 43.55,
+        "wrong_due_to_generation_pct": 56.45
+      }
+    },
+    "text": {
+      "exact_match": {
+        "n": 124,
+        "hit_and_correct": 4,
+        "hit_and_wrong": 109,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 11,
+        "retrieval_hit_rate": 0.9113,
+        "answer_correct_rate": 0.0323,
+        "wrong_due_to_retrieval_miss_pct": 9.17,
+        "wrong_due_to_generation_pct": 90.83
+      },
+      "f1_threshold": {
+        "n": 124,
+        "hit_and_correct": 6,
+        "hit_and_wrong": 107,
+        "miss_and_correct": 0,
+        "miss_and_wrong": 11,
+        "retrieval_hit_rate": 0.9113,
+        "answer_correct_rate": 0.0484,
+        "wrong_due_to_retrieval_miss_pct": 9.32,
+        "wrong_due_to_generation_pct": 90.68
+      }
+    }
+  },
+  "abstention_analysis": {
+    "overall": {
+      "n": 300,
+      "total_abstentions": 10,
+      "abstention_rate": 0.0333,
+      "false_abstentions_despite_retrieval_hit": 2,
+      "false_abstention_rate_given_hit": 0.0087,
+      "abstentions_with_retrieval_miss": 8
+    },
+    "by_pdf": {
+      "Agriculture": {
+        "n": 40,
+        "total_abstentions": 0,
+        "abstention_rate": 0.0,
+        "false_abstentions_despite_retrieval_hit": 0,
+        "false_abstention_rate_given_hit": 0.0,
+        "abstentions_with_retrieval_miss": 0
+      },
+      "BDHistory": {
+        "n": 36,
+        "total_abstentions": 0,
+        "abstention_rate": 0.0,
+        "false_abstentions_despite_retrieval_hit": 0,
+        "false_abstention_rate_given_hit": 0.0,
+        "abstentions_with_retrieval_miss": 0
+      },
+      "DUETBooklet": {
+        "n": 48,
+        "total_abstentions": 10,
+        "abstention_rate": 0.2083,
+        "false_abstentions_despite_retrieval_hit": 2,
+        "false_abstention_rate_given_hit": 0.0741,
+        "abstentions_with_retrieval_miss": 8
+      },
+      "Geography": {
+        "n": 20,
+        "total_abstentions": 0,
+        "abstention_rate": 0.0,
+        "false_abstentions_despite_retrieval_hit": 0,
+        "false_abstention_rate_given_hit": 0.0,
+        "abstentions_with_retrieval_miss": 0
+      },
+      "PolashirJuddho": {
+        "n": 36,
+        "total_abstentions": 0,
+        "abstention_rate": 0.0,
+        "false_abstentions_despite_retrieval_hit": 0,
+        "false_abstention_rate_given_hit": 0.0,
+        "abstentions_with_retrieval_miss": 0
+      },
+      "Science9": {
+        "n": 28,
+        "total_abstentions": 0,
+        "abstention_rate": 0.0,
+        "false_abstentions_despite_retrieval_hit": 0,
+        "false_abstention_rate_given_hit": 0.0,
+        "abstentions_with_retrieval_miss": 0
+      },
+      "UGC1": {
+        "n": 36,
+        "total_abstentions": 0,
+        "abstention_rate": 0.0,
+        "false_abstentions_despite_retrieval_hit": 0,
+        "false_abstention_rate_given_hit": 0.0,
+        "abstentions_with_retrieval_miss": 0
+      },
+      "UGC2": {
+        "n": 16,
+        "total_abstentions": 0,
+        "abstention_rate": 0.0,
+        "false_abstentions_despite_retrieval_hit": 0,
+        "false_abstention_rate_given_hit": 0.0,
+        "abstentions_with_retrieval_miss": 0
+      },
+      "UGC3": {
+        "n": 32,
+        "total_abstentions": 0,
+        "abstention_rate": 0.0,
+        "false_abstentions_despite_retrieval_hit": 0,
+        "false_abstention_rate_given_hit": 0.0,
+        "abstentions_with_retrieval_miss": 0
+      },
+      "piechart": {
+        "n": 8,
+        "total_abstentions": 0,
+        "abstention_rate": 0.0,
+        "false_abstentions_despite_retrieval_hit": 0,
+        "false_abstention_rate_given_hit": 0.0,
+        "abstentions_with_retrieval_miss": 0
+      }
+    }
+  }
+}

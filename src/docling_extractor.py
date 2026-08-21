@@ -416,11 +416,20 @@ class DoclingExtractor:
                 cand_score = float(cand_stats.get("quality_score", 0.0))
                 native_bn = float(best_stats.get("bangla_chars", 0.0))
                 cand_bn = float(cand_stats.get("bangla_chars", 0.0))
+                native_chars = float(best_stats.get("chars", 0.0))
+                cand_chars = float(cand_stats.get("chars", 0.0))
                 if self.config.force_full_page_ocr and cand_bn > 0:
                     best, best_stats = cand, cand_stats
                 elif native_score < self.config.min_bangla_quality and cand_score >= native_score - 0.03 and cand_bn >= max(5, native_bn * 0.5):
                     best, best_stats = cand, cand_stats
                 elif cand_score > native_score + 0.08 and cand_bn > native_bn * 0.75:
+                    best, best_stats = cand, cand_stats
+                elif native_bn == 0 and cand_bn == 0 and cand_chars > max(50.0, native_chars * 2):
+                    # Neither candidate has Bangla content, so the bangla_chars-gated
+                    # comparisons above give no signal (likely a non-Bangla page/document).
+                    # Fall back to raw extracted character count so a candidate that
+                    # actually recovered text (e.g. OCR on a scanned English page) isn't
+                    # discarded in favor of a near-empty native candidate.
                     best, best_stats = cand, cand_stats
             selected_source_by_page[page] = best.name
 

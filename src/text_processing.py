@@ -331,9 +331,18 @@ def _parse_compact_pipe_table(markdown_text: str) -> tuple[list[str], list[list[
             captured.pop()
         if not any(captured):
             continue
+        # A joined markdown separator row (e.g. ":---|:---|:---") also matches this
+        # pattern when the header has no leading index column, since Docling joins
+        # each original line with "| |" regardless of whether a row is real data or
+        # the separator itself. Reject it here rather than returning it as a fake
+        # data row, so the caller falls through to the more general fallback parser.
+        if all(set(cell) <= {"-", ":", " "} for cell in captured if cell):
+            continue
         row = [""] + captured
         row = row[: len(headers)] + [""] * max(0, len(headers) - len(row))
         rows.append(row[: len(headers)])
+    if rows and all(not any(c.strip() for c in row) or all(set(c) <= {"-", ":", " "} for c in row if c) for row in rows):
+        return [], []
     return headers, rows
 
 

@@ -65,6 +65,7 @@ PDF_TO_PROJECT = {
     "UGC2": "workspace/projects/rag_test8-ugc2-scholarship",
     "UGC3": "workspace/projects/rag_test9-ugc3-rokeya",
     "DUETBooklet": "workspace/projects/rag_test10-duet-booklet-en",
+    "IICTNotice": "workspace/projects/rag_test11-iict-admission-notice",
 }
 
 _BN_DIGITS = str.maketrans("০১২৩৪৫৬৭৮৯", "0123456789")
